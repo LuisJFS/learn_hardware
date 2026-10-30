@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+
+:root {
+  --font-neo: 'Space Grotesk', 'Inter', -apple-system, sans-serif;
+}
+
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #f0ede6;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #00F0FF;
+  border: 2px solid #000;
+  border-radius: 0px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #FFE600;
+}
+
+/* Reset y Body */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-neo);
+  background: #f4f1ea;
+  color: #000000;
+}
+
+/* Patrón sutil cuadriculado*/
+.bg-grid-dots {
+  background-image: radial-gradient(#000000 1px, transparent 1px);
+  background-size: 16px 16px;
+}
